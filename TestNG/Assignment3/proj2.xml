@@ -1,0 +1,18 @@
+//Employee Id:20450630
+
+<suite name="proj2">
+
+<test name="pages.Testing_Demo">
+
+<classes>
+
+<class name="testing.Testing_DemoTest">
+
+</class>
+
+</classes>
+
+</test>
+
+</suite>
+

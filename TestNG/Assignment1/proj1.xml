@@ -1,0 +1,16 @@
+//Employee Id:20450630
+//src/test/resources -------> proj1.xml
+
+<suite name="proj1">
+
+       <test name="proj1 functional Testing">
+
+           <classes>
+
+               <class name="testing.Testing_Demo1"/>
+
+           </classes>
+
+       </test>
+
+</suite>

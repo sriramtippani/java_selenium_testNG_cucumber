@@ -1,0 +1,25 @@
+//Employee Id:20450630
+
+#Implement multiple Scenarios for one test case
+
+@Login
+Feature: To test the login Functionality and Order submitting of petstore 
+
+@validlogin
+Scenario Outline: Login with valid inputs
+Given user is on login page
+When enter valid <username> and <password> and click login
+Then user should login successfully
+Examples:
+                     |username|password|
+                     |j2ee|j2ee| 
+
+@validsubmit1
+Scenario: Submit the order
+When Add to cart for fish And proceed to checkout And click continue And confirm
+Then Order for fish should be submitted 
+
+@validsubmit2
+Scenario: Submit the order
+When Add to cart for bird And proceed to checkout And click continue And confirm
+Then Order for bird should be submitted

@@ -1,0 +1,59 @@
+//Employee Id: 20450630
+
+//IdentifyEquivalent Classes and Boundary values for each of the below requirements
+Requirements:
+ An employee in an organization can enter transactions only in working hours. When an employee selects ‘transaction menu’ , the system checks the ‘system time’ and performs the following checks :
+
+1.Transactions are not allowed on Saturday and Sunday
+Answer:      Equivalence Class Partition
+----------     
+
+            Valid:Monday to Friday
+            Invalid: Saturday and Sunday
+
+2.There is a list of holidays.Transactions are not allowed on holidays.
+Answer:Equivalence Class Partition
+---------- 
+
+            Valid: Saturday and Sunday
+            Invalid:Monday to Friday
+
+3.For clerks,the 'Transaction hours' are 9.00 to 13.00
+Answer:     Boundary Value Analysis
+---------- 
+
+            8.59
+            9.00
+            9.01
+            12.59
+            13.00
+            13.01
+
+            Equivalence Class Partition
+
+            Valid: 9.00 to 13.00
+            Invalid:<9.00 to >13.00
+
+4.For officers,the 'Transaction hours' are 9.00 to 15.00
+Answer:     Boundary Value Analysis
+---------- 
+
+            8.59
+            9.00
+            9.01
+            14.59
+            15.00
+            15.01
+
+            Equivalence Class Partition
+
+            Valid: 9.00 to 15.00
+            Invalid:<9.00 to >15.00
+
+      
+5.Anybody else is not allowed access to transactoin menu.
+Answer:     Equivalence Class Partition
+---------- 
+
+            Valid: Clerk and Officers
+            Invalid:Other than Clerk and Officers
